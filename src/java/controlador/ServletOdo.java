@@ -238,14 +238,14 @@ public class ServletOdo extends HttpServlet {
                    citagetset ds=new citagetset();
               cita gu=new cita();
             dat=gu.insertar( odont, fecha_ini, fecha_fin, hora_ini, hora_fin);
-            
+            JOptionPane.showMessageDialog(null, "Agenda creada exitosamente");
             if (dat){
                 
-                response.sendRedirect("OdoCalendario.jsp");
+                response.sendRedirect("Odontologo.jsp");
             }
             else{
                 
-                response.sendRedirect("OdoCalendario.jsp");
+                response.sendRedirect("Odontologo.jsp");
             }
           }else{
               JOptionPane.showMessageDialog(null, "La hora inicial debe ser menor a la hora final");

@@ -125,7 +125,7 @@ public class ServletPac extends HttpServlet {
             throws ServletException, IOException {
         processRequest(request, response);
         
-        
+        JOptionPane.showMessageDialog(null, "Entro al servlet");
         
             ArrayList<citagetset> lista=new ArrayList<>();
             String cod;
@@ -151,7 +151,7 @@ public class ServletPac extends HttpServlet {
            
             HttpSession pac= request.getSession(true);
             pac.setAttribute("servletFechaCit", fec);
-            pac.setAttribute("ServletCitCod", cod);
+            pac.setAttribute("ServletCitCod", codi);
             pac.setAttribute("ServletCitOdo", odo);
             pac.setAttribute("ServletCitHor", hor);
             pac.setAttribute("ServletCitEst", est);

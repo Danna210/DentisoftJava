@@ -37,6 +37,7 @@
         
         <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
         <script src="js/ConsulOdoPac.js" type="text/javascript"></script>
+        <script src="js/ActuCita.js" type="text/javascript"></script>
         <title>Dentisoft</title>
     </head>
     <body>
@@ -292,8 +293,8 @@
                 <td><%=gs.getHor()%></td>
                 <td><%=gs.getEst()%></td>
             <form action="ServletPac" method="POST">
-                <input type="hidden" name="cod" value="<%=gs.getCod()%>">
-                <td><input type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModal1" name="solicitar" value="Solicitar"></td>
+                <input type="hidden" name="cod" class="cod" value="<%=gs.getCod()%>">
+                <td><input type="button" class="btn btn-primary btn-block btn_actu_cita" data-toggle="modal" data-target="#exampleModal1" name="solicitar" value="Solicitar"></td>
                 
             </form>
             </tr>
